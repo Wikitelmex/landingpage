@@ -6,8 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>landing page</title>
     
-    <link rel='stylesheet' href='style.css'>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*
+        p {
+            color: black;
+        }
+        */
+        @media only screen and (max-width: 600px) {
+            main{
+                background-color: burlywood;
+            }
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+
+        }
+        nav > ul {
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        section {
+            align-content: flex-end;
+        }
+    </style>
 
     <script src='script.js'></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,15 +49,32 @@
     <header id="header">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="nav-bar">
             <img id="header-img" style="height: 50px; width: auto;" src="https://mpng.subpng.com/20180602/oiv/kisspng-web-development-web-service-web-developer-digital-develop-5b131963a04d78.6954247915279783396566.jpg" alt="logo">
-            <a class="nav-link" href="#features">Features</a>
-            <a class="nav-link" href="#how">How it Works</a>
-            <a class="nav-link" href="#pricing">Princing</a>
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how">How it Works</a></li>
+                <li><a class="nav-link" href="#pricing">Princing</a></li>
+            </ul>
         </nav>
     </header>
     <main style="padding-top: 70px;" class="container-fluid bg-light">
         
+        
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam tincidunt lacus. In vitae ligula ac nunc volutpat lobortis vel ac nunc. Phasellus mi quam, suscipit eget velit eu, maximus vestibulum est. Aenean sit amet purus ullamcorper, feugiat odio sit amet, porta leo. Curabitur mattis et nisl vel posuere. Aenean ultricies justo at consequat elementum. Nulla consequat ultrices nisl, vel tempus arcu consectetur eu. Proin mollis tortor nibh, quis viverra elit hendrerit sit amet. Fusce luctus dapibus sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam tincidunt lacus. In vitae ligula ac nunc volutpat lobortis vel ac nunc. Phasellus mi quam, suscipit eget velit eu, maximus vestibulum est. Aenean sit amet purus ullamcorper, feugiat odio sit amet, porta leo. Curabitur mattis et nisl vel posuere. Aenean ultricies justo at consequat elementum. Nulla consequat ultrices nisl, vel tempus arcu consectetur eu. Proin mollis tortor nibh, quis viverra elit hendrerit sit amet. Fusce luctus dapibus sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <section class="form-group jumbotron d-inline-flex p-2">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+                <label for="email">Email: 
+                    <input class="form-control" type="email" name="email" id="email" placeholder="person@host.com" required>
+                </label>
+                <input class="btn btn-primary" type="submit" value="submit" id="submit">
+
+            </form>
+        </section>
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/oSmUI3m2kLk" encrypted-media; allowfullscreen></iframe>
+        </div>
 
         <h2 id="features">Features</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam tincidunt lacus. In vitae ligula ac nunc volutpat lobortis vel ac nunc. Phasellus mi quam, suscipit eget velit eu, maximus vestibulum est. Aenean sit amet purus ullamcorper, feugiat odio sit amet, porta leo. Curabitur mattis et nisl vel posuere. Aenean ultricies justo at consequat elementum. Nulla consequat ultrices nisl, vel tempus arcu consectetur eu. Proin mollis tortor nibh, quis viverra elit hendrerit sit amet. Fusce luctus dapibus sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -46,6 +93,8 @@
         <p>In hac habitasse platea dictumst. Ut ullamcorper elit in leo porttitor vestibulum. Mauris id massa faucibus, vehicula nibh sed, viverra est. Integer tincidunt libero ac elit elementum consequat. Cras finibus dolor sem, et facilisis nunc vehicula sit amet. Curabitur at dolor felis. Nullam feugiat sapien arcu, et tincidunt neque consectetur sit amet. Quisque tincidunt felis ultricies, interdum nulla non, consequat enim. Aliquam dolor ipsum, ultrices a felis a, sagittis vehicula orci. Aliquam erat volutpat. Sed tempus placerat nisi id porta.</p>
         <p>Donec ac ullamcorper purus. Proin hendrerit orci in mauris viverra, eget bibendum orci convallis. Vestibulum varius tortor id mattis efficitur. Integer sed est scelerisque, dapibus turpis nec, sodales dui. In sodales leo eu lacinia finibus. Vestibulum vulputate mi vitae felis pulvinar pellentesque. Proin in odio at neque gravida ultricies. Etiam arcu metus, tincidunt eu justo ultrices, vehicula rutrum augue. Cras sodales enim id eros finibus egestas. Etiam porttitor dui condimentum, scelerisque urna ac, lacinia nunc. Maecenas in est gravida, finibus felis sagittis, consequat velit. Aliquam consequat ullamcorper tortor, eu sodales odio laoreet ac. Phasellus malesuada malesuada nisl sit amet mattis.</p>
         <p>In hac habitasse platea dictumst. Ut ullamcorper elit in leo porttitor vestibulum. Mauris id massa faucibus, vehicula nibh sed, viverra est. Integer tincidunt libero ac elit elementum consequat. Cras finibus dolor sem, et facilisis nunc vehicula sit amet. Curabitur at dolor felis. Nullam feugiat sapien arcu, et tincidunt neque consectetur sit amet. Quisque tincidunt felis ultricies, interdum nulla non, consequat enim. Aliquam dolor ipsum, ultrices a felis a, sagittis vehicula orci. Aliquam erat volutpat. Sed tempus placerat nisi id porta.</p>
+
+
 
     </main>
     <footer>
